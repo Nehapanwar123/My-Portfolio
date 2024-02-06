@@ -1,6 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
+/* extra */
 
+
+
+  
+
+@media screen and (max-width: 992px) {
+    .navbar .navbar-nav {
+        margin: auto; 
+        background-color: #a855f7;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+    }
+    
+    .navbar .navbar-nav .nav-item {
+        width: 100%; /* Make each menu item full width */
+        text-align: center; 
+    }
+    
+    .navbar .navbar-nav .nav-item a {
+        display: block;
+        padding: 10px 0; /* Add padding for better spacing */
+        color: white; /* Change text color */
+        transition: background-color 0.3s; /* Add transition for smoother hover effect */
+    }
+    
+    .navbar .navbar-nav .nav-item a:hover {
+        background-color:  #655d5d; /* Change background color on hover */
+        border-radius: 5px; /* Add border-radius for rounded corners */
+    }
+  
+        
+        .navbar-toggler {
+            z-index: 1000; /* Ensure toggler is above the navbar */
+        }
+    }
+    
+    
+
+/* extra end*/
 :root {
     --primary-color: #f9532d;
     --text-color:white;
