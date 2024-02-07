@@ -1,10 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
+
+:root {
+    --primary-color: #f9532d;
+    --text-color:white;
+    --primary-dark:rgba(0, 0, 0, 1.0);
+    --bg-color:#e6e6e6;
+    --font-size:40px;
+    --primary-color: #a855f7;
+    --border-color:#f9532d;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--bg-color);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color:#a855f7;
+} 
+
+
+html,body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background: rgb(44, 43, 43);
+    color:aliceblue;
+}
+
+
+a{
+    font-size: var(--font-size);
+}
+a:hover{
+    color: var(--primary-color)!important;
+}
 /* extra */
 
 
 
-  
+
 
 @media screen and (max-width: 992px) {
     .navbar .navbar-nav {
@@ -19,7 +59,8 @@
     }
     
     .navbar .navbar-nav .nav-item {
-        width: 100%; /* Make each menu item full width */
+        width: 100%;
+         /* Make each menu item full width */
         text-align: center; 
     }
     
@@ -44,46 +85,6 @@
     
 
 /* extra end*/
-:root {
-    --primary-color: #f9532d;
-    --text-color:white;
-    --primary-dark:rgba(0, 0, 0, 1.0);
-    --bg-color:#e6e6e6;
-    --font-size:40px;
-    --primary-color: #a855f7;
-    --border-color:#f9532d;
-}
-::-webkit-scrollbar {
-    width: 15px;
-}
-::-webkit-scrollbar-track {
-    background-color: var(--bg-color);
-}
-::-webkit-scrollbar-thumb {
-    background-color: var(--primary-color);
-    border-radius: 10px;
-}
-::-webkit-scrollbar-thumb:hover {
-    background-color:#a855f7;
-} 
-
-html,body{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    background: rgb(44, 43, 43);
-    color:aliceblue;
-}
-
-
-a{
-    font-size: var(--font-size);
-}
-a:hover{
-    color: var(--primary-color)!important;
-}
-
-  
 /* navbar start */
 .navbar-brand{
     font-size: 25px;
@@ -186,7 +187,7 @@ a:hover{
     border-radius: 50%;
     overflow: hidden;
     display: flex;
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
 .home-img::before{
     position: absolute;
@@ -639,10 +640,7 @@ a:hover{
     .navbar .navbar-nav{
         margin-left: 270px;
     }
-    .home-img{
-        margin-left: 140px;
-        margin-top: -10px;
-    }
+   
     .sk{
         margin: 40px 0px 150px 0px;
     }
@@ -660,11 +658,7 @@ a:hover{
     .navbar .navbar-nav{
         margin-left: 100px;
     }
-    .home-img{
-        /* argin-left: 70px; */
-        margin-left: -20px;
 
-    }
 }
 @media screen and (max-width: 992px) {
     .about-img img{
@@ -769,5 +763,11 @@ body[darkMode="dark"] .c{
 }
 body[darkMode="dark"] .fa-sharp{
     color: var(--primary-color);
+}
+@media (max-width: 576px) {
+    .home-img{
+         width: 325px;
+         height: 325px;
+}
 }
 /* set dark mode end */
