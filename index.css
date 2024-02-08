@@ -143,6 +143,7 @@ a:hover{
 .btn:hover{
     color: var(--text-color)!important;
     background: var( #a855f7);
+     text-decoration: underline;
 }
 .about_btn{
     display: inline-block !important;
