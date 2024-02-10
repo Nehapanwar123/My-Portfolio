@@ -79,7 +79,6 @@ a:hover{
     .navbar .navbar-nav .nav-item a:hover {
         background-color:  #655d5d;
         border-radius: 5px;
-        
     }
   
         
@@ -379,11 +378,13 @@ a:hover{
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
   background-color:rgb(44, 43, 43); /* Background color for hover effect */
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(252, 252, 252, 0.1);
 }
 
 .hobby:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(252, 252, 252, 0.1);
+  transform: translateY(5px);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
 }
 
 .hobby-icon {
@@ -398,7 +399,7 @@ a:hover{
 }
 
 .hobby-description {
-  font-size: 18px;
+  font-size: 22px;
   color: #ffffff;
 }
 
@@ -418,17 +419,16 @@ a:hover{
 /* Education Start */
 .service-box 
 {
-    background-color:rgb(44, 43, 43);   
+    background-color:#fff;   
     padding: 2.5rem 1.3rem;   
     border-radius: 1rem;   
     color: white;
     margin-left: 30px;
     margin-bottom: 3rem;   
-    transition: transform 0.3s, box-shadow 0.3s;
-    color: rgb(255, 255, 255);
-    /* font-family:sans-serif; */
-    /* font-weight: bold; */
-     /* font-family:Arial, Helvetica, sans-serif; */
+    color: rgb(0, 0, 0);
+    font-family:sans-serif;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     
     }
@@ -436,24 +436,30 @@ a:hover{
     .service-box:hover
     {
         
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(255, 243, 243, 0.1);
+        transform: translateY(10px);
+        box-shadow: 0 5px 15px rgba(252, 252, 252, 0.1);
+    transition: 0.9s ease;
     /* opacity: 0.5;  */
-    /* border: 2px solid #772fbb;; */
-    /* color:#772fbb; */
+    background-color:#9c6bc9;
+    color: white;
      cursor: pointer;
     }
     .service-box:hover .ico-circle 
     {     
          background-color: #0077ff; 
         background-color: #0078ff;
-        color:#a855f7;
+        color:  #ffffff;
         border-radius: 30px;
       
     }
     
    
-  
+    .service-box .service-ico
+    {
+        margin-bottom: 1rem;
+        color: #1e1e1e;
+
+    }
     .service-box .ico-circle
     {
         transition: all 500ms ease;
@@ -496,12 +502,8 @@ a:hover{
 
     .service-box .s-description
     {
-        color: #ffffff;
+        color: #000000;
     }
-/* Education end */
-
-
-/* gellary start*/
 
 .mi{
   border-radius: 12px;
@@ -516,19 +518,20 @@ a:hover{
 }
 /* service Start */
 #services{
-    padding: 30px 0;
+    padding: 20px;
+    
  }
  
  .services-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
+    grid-gap: 30px;
     margin-top: 50px;
  }
  
  .services-list div{
     background: #696565;
-    padding: 40px;
+    padding: 30px;
     font-size: 13px;
     font-weight: 300;
     border-radius: 10px;
@@ -584,7 +587,7 @@ a:hover{
     height: 300px;
     border-radius: 10px;
     display: block;
-        
+
     object-fit: cover;
     transition: transform 0.5s;
  }
@@ -648,7 +651,7 @@ a:hover{
  }
  
  .btn2:hover{
-     background:#772fbb; 
+    background:#772fbb;
     color: white;
  }
  
